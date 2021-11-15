@@ -7,6 +7,10 @@ let package = Package(
         .library(name: "UIImage-ResizeMagick", targets: ["UIImage-ResizeMagick"])
     ],
     targets: [
-        .target(name: "UIImage-ResizeMagick", dependencies: [])
+        .target(
+            name: "UIImage-ResizeMagick",
+            path: "Sources",
+            publicHeadersPath: "include"
+        )
     ]
 )
